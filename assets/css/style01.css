@@ -42,7 +42,7 @@
 
 
 /* 배너 */
-.banner_menu {overflow: hidden;position: absolute; left:0; top:20px;width: 100%;height: 100px;}
+.banner_menu {overflow: hidden;position: absolute; left:0; top:20px;width: 100%;height: 100px; z-index: 10;}
 .banner_menu a {color: #fff; font-size: 16px; transition: all 0.3s;}
 .banner_menu a:hover {color: #c1c1c1;}
 .banner_menu .bm_left {float: left;}
@@ -51,7 +51,7 @@
 .banner_menu .bm_left ul li.total {margin-right: 20px;}
 .banner_menu .bm_left ul li.total a {font-size: 14px; padding: 3px 10px; display: inline-block; border: 1px solid #fff; transition: all 0.3s;}
 .banner_menu .bm_left ul li.total a:hover {background: #fff; color: #000;}
-
+.banner_menu .bm_left ul li.total .fa {padding-right: 7px;}
 
 .banner_menu .bm_right {float: right; overflow: hidden;}
 .banner_menu .bm_right ul {float: left;}
@@ -63,6 +63,24 @@
 .banner_menu .bm_right li.puple {margin-right: 0px;}
 .banner_menu .bm_right li.puple a {display: inline-block; width:80px;background-color: #3a0e6a; color: #fff;padding: 7px 30px 9px 30px; border: 1px solid #6240c4;}
 .banner_menu li.line:after {content: ''; width: 1px; height: 14px; background: #fff;position: absolute; right: -18px; top:2px;}
+
+
+/*슬라이드*/
+
+.slider{width: 100%;height: 600px;}
+.slider .ss1 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
+.slider .ss2 {background: url(../img/swiper02.jpg) no-repeat center center; background-size: cover;text-align: center;}
+.slider .ss3 {background: url(../img/swiper03.jpg) no-repeat center center; background-size: cover;}
+
+.slider .swiper-slide {}
+.slider .swiper-slide h3 {display: inline-block; position: relative; font-size: 62px; line-height: 65px; color: #fff; margin-top:200px;}
+.slider .swiper-slide h3:after {
+    content: '';
+    width: 100%; height: 1px; 
+    background-color: rgba(255,255,255,0.3); position: absolute; left: 0; bottom:-35px;
+}
+.slider .swiper-slide em{display: block; font-size: 50px; font-weight: 100;}
+.slider .swiper-slide p{font-size: 23px; color:#fff; padding-top: 55px;}
 
 
 
@@ -82,7 +100,9 @@
     .row {padding: 0 24px;}
     .header h1{float: none; text-align: center;}
     .header h1 strong{left: 24px;}
-
+    
+    .banner_menu .bm_left ul {display: none;}
+    .banner_menu .bm_right ul:first-child{display: none;}
     
     
 }
@@ -96,6 +116,7 @@
     #mNav{right: 16px;}
     .header h1 {text-align: left;}
     .header h1 strong {display: none;}
+
     
 }
 
