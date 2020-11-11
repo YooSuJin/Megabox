@@ -70,8 +70,8 @@
         }
 
         // iframe 보이기
-        function showPlayer() {
-            if ( !player.obj ) {
+        function showPlayer(){
+            if ( !player.obj ){
                 setPlayer( $selector.showButton.data("youtube") );
             }
             
